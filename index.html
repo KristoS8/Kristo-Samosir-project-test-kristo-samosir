@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUITMEDIA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="divNav" id="ulList">
+      <ul class="ulList">
+        <li class="logo"><img src="logo.png" alt="" class="img_logo" /></li>
+        <li class="liNav"><a href="" class="aNav">Work</a></li>
+        <li class="liNav"><a href="" class="aNav">About</a></li>
+        <li class="liNav"><a href="" class="aNav">Service</a></li>
+        <li class="liNav"><a href="" class="aNav">Ideas</a></li>
+        <li class="liNav"><a href="" class="aNav">Careers</a></li>
+        <li class="liNav"><a href="" class="aNav">Contact</a></li>
+      </ul>
+    </div>
+    <!-- akhir navbar -->
+
+    <div class="container">
+      <div class="parralex">
+        <img src="baner.jpg" alt="baner" class="imgBaner" />
+      </div>
+      <div class="container_content">
+        <h1 class="text1">Ideas</h1>
+        <p class="text2">Where all our great things begin</p>
+      </div>
+    </div>
+
+    <div class="container2">
+      <p class="text3">Showing 1-10 of 100</p>
+      <div class="button1">
+        <label for="perPage">Show per page: </label>
+        <select id="perPage">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+      <div class="button2">
+        <label for="sort">Sort by: </label>
+        <select id="sort">
+          <option value="Newest">Newest</option>
+          <option value="Oldest">Oldest</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="cardContainer"></div>
+
+    <div class="pagination"></div>
+
+    <script src="data.js" defer></script>
+  </body>
+</html>

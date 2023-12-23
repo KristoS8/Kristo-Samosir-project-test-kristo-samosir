@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Awal Style Navbar */
+.divNav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ef6c33;
+  z-index: 2;
+  transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.divNav.hidden {
+  top: -100px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.ulList {
+  margin-inline-end: 50px;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.liNav {
+  padding: 23px;
+}
+
+.aNav {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.aNav:hover {
+  text-decoration: underline;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  bottom: 5px;
+  position: relative;
+  right: 700px;
+}
+
+.img_logo {
+  width: 102px;
+  height: 47px;
+}
+
+/* Akhir style navbar */
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  z-index: -2;
+}
+
+.parralex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  transform: skewY(-5deg);
+  overflow: hidden;
+}
+.imgBaner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+.container_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.container2 {
+  display: flex;
+}
+
+.text3 {
+  margin-left: 210px;
+  margin-top: 30px;
+}
+
+.button1 {
+  margin-left: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button2 {
+  margin-left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#perPage {
+  margin-left: 10px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 50px;
+  border-radius: 20px;
+}
+
+#sort {
+  margin-left: 10px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 50px;
+  border-radius: 20px;
+}
+
+#cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.card {
+  flex: 0 1 calc(19% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
